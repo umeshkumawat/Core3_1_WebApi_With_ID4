@@ -2,6 +2,7 @@
 using CommanderWebAPI.Data;
 using CommanderWebAPI.Dtos;
 using CommanderWebAPI.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -14,6 +15,7 @@ namespace CommanderWebAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class CommandsController : ControllerBase
     {
         private readonly ICommanderRepo _repo;

@@ -7,7 +7,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
-namespace CommanderWebAPI
+namespace TokenServer
 {
     public class Program
     {
@@ -20,7 +20,7 @@ namespace CommanderWebAPI
             Host.CreateDefaultBuilder(args)
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
-                    webBuilder.UseStartup<Startup_API>();
+                    webBuilder.UseStartup<Startup_TokenServer>();
                 });
     }
 }

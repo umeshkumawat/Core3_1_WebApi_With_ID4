@@ -1,3 +1,11 @@
 
 CommanderWebAPI/bin/
 CommanderWebAPI/obj/
+APIAsClient (Client_Credentisl_Flow)/bin/
+APIAsClient (Client_Credentisl_Flow)/obj/
+IdentityServer_4/bin/
+IdentityServer_4/obj/
+MVCClient (Authorization Code Flow)/bin/
+MVCClient (Authorization Code Flow)/obj/
+TokenServer/bin/
+TokenServer/obj/
