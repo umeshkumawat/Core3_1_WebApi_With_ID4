@@ -1,0 +1,27 @@
+﻿@using IdentityServer_4.Controllers
+@model RegisterViewModel
+
+
+    <form asp-controller="Auth" asp-action="Register" method="post">
+        <input asp-for="ReturnUrl" type="hidden" />
+        <div>
+            <label>Username</label>
+            <input asp-for="UserId" type="text" />
+            <span asp-validation-for="UserId"></span>
+        </div>
+        <div>
+            <label>password</label>
+            <input asp-for="Password" type="text" />
+            <span asp-validation-for="Password"></span>
+        </div>
+        <div>
+            <label>confirm password</label>
+            <input asp-for="ConfirmPassword" type="text" />
+            <span asp-validation-for="ConfirmPassword"></span>
+        </div>
+        <div>
+            <button type="submit">Register</button>
+        </div>
+        <a asp-controller="Auth" asp-action="Login" asp-route-returnUrl="@Model.ReturnUrl">Back to Login</a>
+    </form>
+
